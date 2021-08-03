@@ -139,7 +139,7 @@ if (promedioPablo > promedioMaria) {
 }
 
 if (promedioPablo > 51) {
-   console.log('pablo aprobo');
+   console.log('pablgo aprobo');
 } else {
    console.log('Pablo no aprobo');
 }
