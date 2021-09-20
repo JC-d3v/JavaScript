@@ -12,7 +12,7 @@
 
 // TIP: FUNCIONES DECLARADAS
 // hoisting permite la elevacion de las variables
-// permite ejecutar la funcion antes de su declaracion
+// permite llamar a la funcion antes de su declaracion
 saludo('juan', 'perez', 'soliz');
 
 function saludo(nombre, app, apm) {
@@ -37,7 +37,7 @@ suma(5, 3);
 const suma2 = (num1, num2) => console.log(num1 + num2);
 suma2(4, 6);
 
-// Funciones anonimas AUTOEJECUTABLES Y AUTOEJECUTABLES
+// Funciones ANONIMAS AUTOEJECUTABLES Y AUTOEJECUTABLES
 // TIP: funcion clasica autoejecutables
 const saludo3 = (function () {
    console.log('saludos 3 HOLAAAAA');

@@ -4,18 +4,16 @@
 
 // las variables se pueden definir con LET VAR CONST
 
-//Inicio de variables
+// TIP: Inicio de variables
 let coche;
 
-//declaro variable
+// TIP: declaro variable
 coche = 'opel';
 
-//compruebo valor en consola
+// TIP: compruebo valor en consola
 console.log(coche);
 
-/**
- * Tipos de datos
- */
+// TIP: Tipos de datos
 
 // tenemos los objetos y primitivos
 
@@ -41,49 +39,70 @@ console.log(typeof oficios);
 
 // tipos de datos primitivos
 
-// numbers o numeros
+// TIP: numbers o numeros
 const edad = 5;
 
-//integer
+// TIP: integer
 console.log(edad);
 
-//float
+// TIP: float
 const temp = 23.5;
 console.log(temp);
 console.log(typeof temp);
 
-//strings o cadenas de texto
+// TIP: strings o cadenas de texto
 const nombre = 'maria';
 const str_num = '9';
 
 console.log(str_num);
 console.log(typeof str_num);
 
-// boolean
+// TIP: boolean
 const isMan = true;
 const isWoman = false;
 
-//undefined
+// TIP: undefined
 let empleados;
 console.log(empleados);
 
-//null
+// TIP: null
 let pais = null;
 console.log(pais);
 
-/**
- * Alcance de las variables
- */
+// TIP: // FIXME:  Ambito de las variables
+// Alcance de las variables
+//
 console.log('--Alcance de las variables--');
 
-// Contexto superGlobal = Tenemos acceso desde cualquier archivo
+// Ambito superGlobal = Tenemos acceso desde cualquier archivo
 
-// Contexto global = tenemos acceso desde todo el archivo
+// Ambito global = tenemos acceso desde todo el archivo
 
-// Contexto local = El que cuyo contexto esta dentro de la funcion
+var perrito = 'Fernando';
+console.log(`var Global: ${perrito}`);
 
-// Contexto de bloque = el que cuyo contexto esta dentro de un bloque
-//definido con llaves como en bucles FOR o condicionales IF
+let pez = 'tiburon';
+console.log(`let Global: ${pez}`);
+
+// Ambito local = El que cuyo contexto esta dentro de la funcion
+//var respeta el ambito local - no puedo casar al gato de la funcion
+
+function saltar() {
+   var gato = 'Bruce';
+}
+// console.log(`var Local: ${gato}`);
+
+// Ambito de bloque = el que cuyo contexto esta dentro de un bloque
+// definido con llaves como en bucles FOR o condicionales IF
+// VAR no respeta el bloque - el appelido sale del bloque
+let nombre2 = 'maria';
+if (nombre2 === 'maria') {
+   var apellido = 'Gonzales';
+   let mascota2 = 'gatillo';
+}
+
+console.log(`var bloque: ${apellido}`);
+//console.log(`let bloque: ${mascota2}`);
 
 // IMPORTANTE: la definicion de variables con VAR no respeta el contexto
 //de bloque de un FOR o IF
@@ -98,9 +117,6 @@ console.log('--Alcance de las variables--');
 let velocidad_var = 8;
 
 //contexto local
-function saltar() {
-   var perro_var = 'feranando';
-}
 
 //contexto de bloque
 if (velocidad_var > 5) {
@@ -112,43 +128,3 @@ if (velocidad_var > 5) {
 // console.log(gato_var);
 
 console.log(velocidad_var);
-
-/**
- * Concatenar
- */
-
-// cocatenacion tradicional
-
-let frase1 = 'Me gusta mucho pasear';
-let frase2 = ', por la calle';
-
-//concatenacion por consola
-console.log(frase1 + frase2);
-
-//concatenacion por pantalla
-document.write(frase1 + frase2);
-
-//************************************ */
-let nombre_c = 'Antonio';
-let persona;
-let rubia = false;
-let pelirroja = true;
-let morena = true;
-let castanya = false;
-
-if (rubia) {
-   persona = 'rubia';
-} else if (pelirroja) {
-   persona = 'pelirroja';
-} else if (castanya) {
-   persona = 'castaña';
-}
-
-let saludo = 'Hola ' + nombre_c + ' conoces a ' + persona;
-
-console.log(saludo);
-
-//manera moderna de concatenar
-let saludo2 = `Hola ${nombre_c} me gusta mucho ir a pasear con ${persona}`;
-
-console.log(saludo2);
