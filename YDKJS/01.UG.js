@@ -26,3 +26,6 @@ if (amount > bank_balance) {
 }
 
 console.log(`msg`, formatAmount(123.125545));
+
+typeof amount;
+console.log(`msg`, typeof amount);

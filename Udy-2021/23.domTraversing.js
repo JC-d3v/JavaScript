@@ -14,3 +14,10 @@
 const lista = document.querySelector('#lista');
 
 console.log(`Hijos de la lista`, lista.children);
+
+console.log(`padre de la lista`, lista.parentElement);
+
+console.log(`hermano previo a la lista`, lista.previousSibling);
+//hermano previo tipo nodo de texto H2
+
+console.log(`hermano siguiente de la lista`, lista.nextSibling);
