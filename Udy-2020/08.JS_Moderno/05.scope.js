@@ -1,3 +1,4 @@
+// definicion de variables
 var test;
 test = 10;
 function prueba() {
