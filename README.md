@@ -1,2 +1,3 @@
 # JavaScript
-Practicas
+
+Practicas JS y TS
