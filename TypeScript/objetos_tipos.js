@@ -38,5 +38,5 @@ var loquesea;
 loquesea = 'text';
 loquesea = 10;
 // TIP: verificar tipo de objeto
-var cosa = true;
+var cosa = 1.123;
 console.log(typeof cosa);

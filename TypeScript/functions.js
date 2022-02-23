@@ -51,6 +51,6 @@ function saludar() {
 }
 var miFuncion;
 miFuncion = saludar;
-console.log(miFuncion());
+console.log(miFuncion("qw", "qw"));
 miFuncion = llamaHeroe;
 console.log(miFuncion('aqua', 'now'));

@@ -35,7 +35,7 @@ console.log(nomPropio('ironman'));
 
 // TIP: PARAMETROS REST
 function nomComp(nombre: string, ...resto: string[]): string {
-    return nombre + '+' + resto.join('/'):
+    return nombre + '+' + resto.join('/');
 }
 let superman: string = nomComp('Clark', 'Joseph', 'Kent');
 let ironman: string = nomComp('Anthony', 'Edward', 'Stark', 'tercero');
@@ -48,7 +48,7 @@ function saludar(): string {
 }
 let miFuncion: (x: string, y: string) => string;
 miFuncion = saludar;
-console.log(miFuncion());
+console.log(miFuncion("qw", "qw"));
 miFuncion = llamaHeroe;
 console.log(miFuncion('aqua', 'now'));
 
