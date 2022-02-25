@@ -1,23 +1,23 @@
 class Heroe {
 
-    constructor(public nombre: string, private nombreReal: string) {
-        console.log(`cosntructor Heroe`);
-    }
-    protected getNombre(): string {
-        console.log(`get nombre Protegido`);
-        return this.nombre;
-    }
+  constructor(public nombre: string, private nombreReal: string) {
+    console.log(`cosntructor Heroe`);
+  }
+  protected getNombre(): string {
+    console.log(`get nombre Protegido`);
+    return this.nombre;
+  }
 }
 
 class Xmen extends Heroe {
-    constructor(a: string, b: string) {
-        super(a, b);
-        console.log(`cosntructor Xmen`);
-    }
-    public getName(): string {
-        console.log(`get Name publico`);
-        return super.getNombre();
-    }
+  constructor(a: string, b: string) {
+    super(a, b);
+    console.log(`cosntructor Xmen`);
+  }
+  public getName(): string {
+    console.log(`get Name publico`);
+    return super.getNombre();
+  }
 }
 
 //let ironman: Heroe = new Heroe('Ironman', 'Tony');
