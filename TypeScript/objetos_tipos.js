@@ -1,5 +1,5 @@
-// TIP: Objetos basicos - propiedades
-var flash = {
+"use strict";
+let flash = {
     nombre: "Barry Allen",
     edad: 24,
     poderes: ['correr muy rapido', 'Viajar en el tiempo']
@@ -9,34 +9,30 @@ flash = {
     edad: 500,
     poderes: ['volar']
 };
-// TIP: Objetos con tipos especificos.
-var dcHeroes = {
+let dcHeroes = {
     nombre: "Barry Allen",
     edad: 24,
     poderes: ['correr muy rapido', 'Viajar en el tiempo']
 };
-// TIP: Objetos con Metodos.
-var marvelHeroe = {
+let marvelHeroe = {
     nombre: "Bruce",
     edad: 40,
     poderes: ['inteligencia'],
-    getNombre: function () {
+    getNombre() {
         return this.nombre;
     }
 };
 console.log(marvelHeroe.getNombre());
-var heroes = {
+let heroes = {
     nombre: 'Dr. Manhatan',
     edad: 150,
     poderes: ['God'],
-    getNombre: function () {
+    getNombre() {
         return this.nombre;
     }
 };
-// TIP: Objetos multiples tipos 
-var loquesea;
+let loquesea;
 loquesea = 'text';
 loquesea = 10;
-// TIP: verificar tipo de objeto
-var cosa = 1.123;
+let cosa = 1.123;
 console.log(typeof cosa);

@@ -1,10 +1,9 @@
-// TIP: PARAMETROS OBLIGATORIOS
-var heroe = "Batman";
+"use strict";
+let heroe = "Batman";
 function llamaHeroe(nomnbre, cuando) {
     return heroe + '/' + cuando + nomnbre;
 }
 console.log(llamaHeroe(heroe, "now"));
-// TIP: PARAMETROS OPCIONALES "___?"
 function nombreCompleto(nombre, apellido) {
     if (apellido) {
         return nombre + ' ' + apellido;
@@ -15,15 +14,12 @@ function nombreCompleto(nombre, apellido) {
 }
 ;
 console.log(nombreCompleto("Bruce"));
-// TIP: PARAMETROS POR DEFECTO "____ = 'man' "
-function nombreHeroe(nombre, add) {
-    if (add === void 0) { add = "man"; }
+function nombreHeroe(nombre, add = "man") {
     return nombre + '-' + add;
 }
 ;
 console.log(nombreHeroe('aqua'));
-function nomPropio(nom, capitalizado) {
-    if (capitalizado === void 0) { capitalizado = true; }
+function nomPropio(nom, capitalizado = true) {
     if (capitalizado) {
         return nom.charAt(0).toUpperCase() + nom.substring(1).toLowerCase();
     }
@@ -33,23 +29,17 @@ function nomPropio(nom, capitalizado) {
 }
 ;
 console.log(nomPropio('ironman'));
-// TIP: PARAMETROS REST
-function nomComp(nombre) {
-    var resto = [];
-    for (var _i = 1; _i < arguments.length; _i++) {
-        resto[_i - 1] = arguments[_i];
-    }
+function nomComp(nombre, ...resto) {
     return nombre + '+' + resto.join('/');
 }
-var superman = nomComp('Clark', 'Joseph', 'Kent');
-var ironman = nomComp('Anthony', 'Edward', 'Stark', 'tercero');
+let superman = nomComp('Clark', 'Joseph', 'Kent');
+let ironman = nomComp('Anthony', 'Edward', 'Stark', 'tercero');
 console.log(superman);
 console.log(ironman);
-// TIP: TIPO FUNCION 
 function saludar() {
     return "Hola ;-)";
 }
-var miFuncion;
+let miFuncion;
 miFuncion = saludar;
 console.log(miFuncion("qw", "qw"));
 miFuncion = llamaHeroe;

@@ -1,5 +1,4 @@
-/// <reference path="nameSpacesValidaciones/textos.ts"/>
-/// <reference path="nameSpacesValidaciones/fecha.ts"/>
+"use strict";
 if (Validaciones.validarTexto('Barry Allen')) {
     console.log('El texto es valido');
 }
